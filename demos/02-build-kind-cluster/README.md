@@ -12,15 +12,16 @@ The following article builds a KinD cluster for use with the following demos.
 
 Provide a name for your cluster
 ```
-export cluster_name=<enter-cluster-name-here>
+k8s_cluster_name=<CLUSTER_NAME> # optional, will default to "kind"
 ```
 
 Create new KinD cluster with a **single worker node** as follows.
 ```
+k8s_cluster_name=${k8s_cluster_name:-kind}
 cat <<EOF | envsubst | kind create cluster --config -
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
-name: ${cluster_name}
+name: ${k8s_cluster_name}
 nodes:
 - role: control-plane
 - role: worker
