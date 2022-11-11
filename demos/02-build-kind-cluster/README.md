@@ -12,12 +12,12 @@ The following article builds a KinD cluster for use with the following demos.
 
 Provide a name for your cluster
 ```
-export k8s_cluster_name=<CLUSTER_NAME> # optional, will default to "kind"
+k8s_cluster_name=<CLUSTER_NAME> # optional, will default to "kind"
 ```
 
 Create new KinD cluster with a **single worker node** as follows.
 ```
-export k8s_cluster_name=${k8s_cluster_name:-kind}
+k8s_cluster_name=${k8s_cluster_name:-kind}
 cat <<EOF | envsubst | kind create cluster --config -
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
