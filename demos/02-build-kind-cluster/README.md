@@ -17,7 +17,7 @@ export k8s_cluster_name=<CLUSTER_NAME> # optional, will default to "kind"
 
 Create new KinD cluster with a **single worker node** as follows.
 ```
-k8s_cluster_name=${k8s_cluster_name:-kind}
+export k8s_cluster_name=${k8s_cluster_name:-kind}
 cat <<EOF | envsubst | kind create cluster --config -
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
