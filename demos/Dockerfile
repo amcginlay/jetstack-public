@@ -20,7 +20,7 @@ RUN apt update \
  && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v${KIND_VERSION}/kind-linux-amd64 \
  && chmod +x ./kind \
  && mv ./kind /usr/local/bin/kind \
- && echo "jsctl-$JSCTL_VERSION-$(uname -s)-$(uname -m | sed s/aarch64/arm64/g)" | tr '[:upper:]' '[:lower:]' > /tmp/JSCTL_ASSET_REF \
+ && echo "jsctl-$JSCTL_VERSION-$(uname -s)-$(uname -m)" | tr '[:upper:]' '[:lower:]' > /tmp/JSCTL_ASSET_REF \
  && echo "$(cat /tmp/JSCTL_ASSET_REF).tar.gz" > /tmp/JSCTL_ARCHIVE \
  && curl -LO https://github.com/jetstack/jsctl/releases/download/v$JSCTL_VERSION/$(cat /tmp/JSCTL_ARCHIVE) \
  && tar -zxvf $(cat /tmp/JSCTL_ARCHIVE) \
