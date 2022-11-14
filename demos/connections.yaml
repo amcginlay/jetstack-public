@@ -1,9 +1,0 @@
-venafi:
-  url: uvo1sou257gbsuv8wdi.vm.cld.sr
-  zone: Policy/Alan Test
-  username: tppadmin
-  password: Password123!
-cert-discovery-venafi:
-  url: uvo1sou257gbsuv8wdi.vm.cld.sr
-  zone: Policy/Alan Test
-  access-token: woToH9mYB1j3JxHBzjQDJg==
