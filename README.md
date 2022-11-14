@@ -10,7 +10,7 @@ These demos depend upon the contents of this repo so you need to copy them local
 
 Now you're good to go ...
 
-* [Start kube-shell](demos/README.md)
+* [Start kube-shell](https://github.com/amcginlay/kube-shell)
 * [01. Build EKS Cluster](demos/01-build-eks-cluster/README.md)
 * [02. Build KinD Cluster](demos/02-build-kind-cluster/README.md)
 
