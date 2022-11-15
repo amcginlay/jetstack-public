@@ -10,7 +10,7 @@ These demos depend upon the contents of this repo so you need to copy them local
 
 Now you're good to go ...
 
-* Start using [kube-shell](https://github.com/amcginlay/kube-shell) to access all the command line tools
+* Start using [kube-shell](https://github.com/amcginlay/kube-shell) to access all the common command line tools
 * [01. How to build an EKS Cluster](demos/01-build-eks-cluster/README.md)
 * [02. How to build a KinD Cluster](demos/02-build-kind-cluster/README.md)
 
