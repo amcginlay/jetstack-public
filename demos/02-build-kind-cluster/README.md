@@ -1,4 +1,4 @@
-# Build KinD Cluster
+# How to build a KinD Cluster
 
 ## Introduction
 
