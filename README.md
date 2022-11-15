@@ -11,8 +11,8 @@ These demos depend upon the contents of this repo so you need to copy them local
 Now you're good to go ...
 
 * [Start kube-shell](https://github.com/amcginlay/kube-shell)
-* [01. Build EKS Cluster](demos/01-build-eks-cluster/README.md)
-* [02. Build KinD Cluster](demos/02-build-kind-cluster/README.md)
+* [01. How to build an EKS Cluster](demos/01-build-eks-cluster/README.md)
+* [02. How to build a KinD Cluster](demos/02-build-kind-cluster/README.md)
 
 ## Demos
 * [03. EKS with ingress-nginx and cert-manager](demos/03-eks-ingress-nginx-cert-manager/README.md)
