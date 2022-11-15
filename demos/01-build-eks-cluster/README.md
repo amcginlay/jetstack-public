@@ -6,7 +6,7 @@ The following article builds an Amazon EKS cluster for use with the following de
 
 ## Prerequisites
 
-- Completed [Start kube-shell](../README.md)
+- Completed [Start kube-shell](https://github.com/amcginlay/kube-shell)
 - Access to an AWS account and appropriate permisssions to provision an EKS cluster
 
 # Steps
