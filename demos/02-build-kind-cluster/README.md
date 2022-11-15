@@ -6,7 +6,7 @@ The following article builds a KinD cluster for use with the following demos.
 
 ## Prerequisites
 
-- Completed [Start kube-shell](https://github.com/amcginlay/kube-shell)
+- Followed [kube-shell](https://github.com/amcginlay/kube-shell) or have access to the client-side tools
 
 # Steps
 
