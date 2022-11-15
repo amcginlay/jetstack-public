@@ -1,4 +1,4 @@
-# Build EKS Cluster
+# How to build an EKS Cluster
 
 ## Introduction
 
