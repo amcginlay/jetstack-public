@@ -24,7 +24,7 @@ That's where `cert-manager` comes in.
 
 ## Prerequisites
 
-- Completed [Start kube-shell](../README.md)
+- Followed [kube-shell](https://github.com/amcginlay/kube-shell) or have access to the client-side tools
 - Completed [01. Build EKS Cluster](../01-build-eks-cluster/README.md)
 - Full control of your own domain (or subdomain) surfaced as a **hosted zone** in AWS Route53.
 
