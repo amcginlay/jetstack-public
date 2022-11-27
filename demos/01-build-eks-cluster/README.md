@@ -9,7 +9,7 @@ The following article builds an Amazon EKS cluster for use with the following de
 - Followed [kube-shell](https://github.com/amcginlay/kube-shell) or otherwise have access to the common command line tools
 - Access to an AWS account and appropriate permisssions to provision an EKS cluster
 
-# Steps
+## Steps
 
 Confirm first that you have AWS connectivity as follows.
 ```
