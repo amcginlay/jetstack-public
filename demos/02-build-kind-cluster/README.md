@@ -59,8 +59,8 @@ Tools like MetalLB (described [here](https://kind.sigs.k8s.io/docs/user/loadbala
 
 If you're using Docker for Desktop on MacOS or Windows the prefered/cleanest way to route traffic from your Laptop to your workloads running in KinD is to either:
 
-a) set up an Ingress Controller (e.g. ingress-nginx) as described [here](https://kind.sigs.k8s.io/docs/user/ingress/)
-b) make use of the `kubectl port-forward` feature.
+- set up an Ingress Controller (e.g. ingress-nginx) as described [here](https://kind.sigs.k8s.io/docs/user/ingress/)
+- make use of the `kubectl port-forward` feature.
 
 <!-- switch images from hashicorp/http-echo:0.2.3 to larstobi/http-echo:0.2.4 to avoid aarch64 compatibility issues -->
 
