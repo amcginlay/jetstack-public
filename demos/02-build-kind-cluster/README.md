@@ -55,7 +55,7 @@ kubectl get nodes -owide
 ### A note on LoadBalancer services
 
 KinD does not provide native support for Kubernetes services of type LoadBalancer.
-Tools like MetalLB (described [here](https://kind.sigs.k8s.io/docs/user/loadbalancer/)) promise to solve this problem but, due to differences in the Docker network configuration, only really work on Linux machines.
+Tools like [MetalLB](https://kind.sigs.k8s.io/docs/user/loadbalancer/) promise to solve this problem but, due to differences in the Docker network configuration, only really work on Linux machines.
 
 If you're using Docker for Desktop on MacOS or Windows the prefered/cleanest way to route traffic from your Laptop to your workloads running in KinD is to either:
 
