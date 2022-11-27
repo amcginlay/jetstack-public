@@ -52,7 +52,7 @@ kubectl cluster-info
 kubectl get nodes -owide
 ```
 
-### A Note on LoadBalancer services and Ingress Controllers
+### A note on LoadBalancer services
 
 KinD does not provide native support for Kubernetes services of type LoadBalancer.
 Tools like MetalLB (described [here](https://kind.sigs.k8s.io/docs/user/loadbalancer/)) promise to solve this problem but, due to differences in the Docker network configuration, only really work on Linux machines.
