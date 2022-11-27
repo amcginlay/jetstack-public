@@ -23,8 +23,21 @@ kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 name: ${k8s_cluster_name}
 nodes:
-- role: control-plane
-- role: worker
+  - role: control-plane
+    kubeadmConfigPatches:
+      - |
+        kind: InitConfiguration
+        nodeRegistration:
+          kubeletExtraArgs:
+            node-labels: "ingress-ready=true"        
+    extraPortMappings:
+      - containerPort: 80
+        hostPort: 80
+        protocol: TCP
+      - containerPort: 443
+        hostPort: 443
+        protocol: TCP
+  - role: worker
 EOF
 ```
 
@@ -36,7 +49,20 @@ kind get clusters
 kubectl config get-clusters
 kubectl config current-context
 kubectl cluster-info
+kubectl get nodes -owide
 ```
+
+### A Note on LoadBalancer services and Ingress Controllers
+
+KinD does not provide native support for Kubernetes services of type LoadBalancer.
+Tools like MetalLB (described [here](https://kind.sigs.k8s.io/docs/user/loadbalancer/)) promise to solve this problem but, due to differences in the Docker network configuration, only really work on Linux machines.
+
+If you're using Docker for Desktop on MacOS or Windows the prefered/cleanest way to route traffic from your Laptop to your workloads running in KinD is to either:
+
+a) set up an Ingress Controller (e.g. ingress-nginx) as described [here](https://kind.sigs.k8s.io/docs/user/ingress/)
+b) make use of the `kubectl port-forward` feature.
+
+<!-- switch images from hashicorp/http-echo:0.2.3 to larstobi/http-echo:0.2.4 to avoid aarch64 compatibility issues -->
 
 This chapter is complete.
 
