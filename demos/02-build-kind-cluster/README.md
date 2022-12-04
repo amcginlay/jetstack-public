@@ -64,6 +64,11 @@ If you're using Docker for Desktop on MacOS or Windows the prefered/cleanest way
 
 <!-- switch images from hashicorp/http-echo:0.2.3 to larstobi/http-echo:0.2.4 to avoid aarch64 compatibility issues -->
 
+<!-- 
+NOTE on Parallels Ubuntu box. Can't use shared network because kubectl times out, and can't use bridged network because DNS will not propagate. So, currently, a bit stuck on that!
+Moving to AWS EC2 for now.
+-->
+
 This chapter is complete.
 
 Next: [Main Menu](/README.md) | [03. EKS with ingress-nginx and cert-manager](../03-eks-ingress-nginx-cert-manager/README.md)
