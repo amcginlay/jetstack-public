@@ -146,7 +146,7 @@ Let's deal with that 404 response.
 As mentioned, your nginx instance is not currently loaded with any routing rules, hence the "404" responses we currently see via the load balancer.
 Routing traffic is what Kubernetes ingress objects are primarily used for and ingress-nginx is an example of a Kubernetes ingress controller which translates those objects into nginx config changes.
 
-As you create your first ingress object, observe the use of the `kubernetes.io/ingress.class` annotation which associates your ingress rule with a specific variant of ingress controller (`nginx`), and the `cert-manager.io/issuer` annotation which associates your rule with a specific variant TLS certificate issuer (`letsencrypt`).
+As you create your first ingress object, observe the use of the `ingressClassName` attribute which associates your ingress rule with a specific variant of ingress controller (`nginx`), and the `cert-manager.io/issuer` annotation which associates your rule with a specific variant TLS certificate issuer (`letsencrypt`).
 ```bash
 export certificate=$(tr \. - <<< ${dns_record_name})-tls
 cat ./ingress.yaml.template                                          # view the template
