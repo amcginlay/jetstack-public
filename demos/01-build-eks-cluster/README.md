@@ -20,7 +20,7 @@ Use `aws configure` as necessary, ensuring that you set the region to `us-west-2
 
 If you need to set up an EKS cluster you can do so as follows.
 ```
-cluster_name=tls-ingress-demo-$(date +"%y%m%d")
+cluster_name=demo-$(date +"%y%m%d")
 eksctl create cluster --name=${cluster_name} --region=us-west-2 --nodes=2 --spot --node-private-networking --instance-types t3.small
 ```
 
