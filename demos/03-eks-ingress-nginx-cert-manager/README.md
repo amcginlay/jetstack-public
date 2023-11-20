@@ -1,5 +1,8 @@
-~~# EKS with ingress-nginx and cert-manager~~ ---> [Maintained version here](https://github.com/amcginlay/venafi-demos/tree/main/demos/01-eks-ingress-nginx-cert-manager)
+# EKS with ingress-nginx and cert-manager 
 
+---> [Maintained version here](https://github.com/amcginlay/venafi-demos/tree/main/demos/01-eks-ingress-nginx-cert-manager)
+
+<!--
 What are the minimum steps required to see `cert-manager` working on Amazon EKS?
 
 [![cert-manager demo using EKS](https://img.youtube.com/vi/Hh0bU3ABJyE/0.jpg)](https://www.youtube.com/watch?v=Hh0bU3ABJyE)
@@ -216,3 +219,4 @@ kubectl delete namespace cert-manager ingress-nginx demos
 ```
 
 Then remove the DNS record from Route53
+-->
