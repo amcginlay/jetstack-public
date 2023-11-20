@@ -15,5 +15,5 @@ Now you're good to go ...
 * [02. How to build a KinD Cluster](demos/02-build-kind-cluster/README.md)
 
 ## Demos
-* [03. EKS with ingress-nginx and cert-manager](demos/03-eks-ingress-nginx-cert-manager/README.md)
+* ~~[03. EKS with ingress-nginx and cert-manager](demos/03-eks-ingress-nginx-cert-manager/README.md)~~ ---> [Maintained version here](https://github.com/amcginlay/venafi-demos/tree/main/demos/01-eks-ingress-nginx-cert-manager)
 * [04. Connecting a Cluster to Jetstack Secure (WIP)](demos/04-connect-cluster-to-jss/README.md)
