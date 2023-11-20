@@ -1,4 +1,4 @@
-# EKS with ingress-nginx and cert-manager
+~~# EKS with ingress-nginx and cert-manager~~ ---> [Maintained version here](https://github.com/amcginlay/venafi-demos/tree/main/demos/01-eks-ingress-nginx-cert-manager)
 
 What are the minimum steps required to see `cert-manager` working on Amazon EKS?
 
